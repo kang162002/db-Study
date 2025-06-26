@@ -75,7 +75,7 @@ INSERT INTO seq_test VALUES(  ( select MAX(no)+1 from seq_test ), '이름6');
 select MAX(no) from seq_test; -- 현재 no 최대값
 select MAX(no)+1 from seq_test; -- 다음에 사용할  no 값
 select NVL(MAX(no)+1, 1) from seq_test; --다음 사용할 no값
-select NVL(MAX(no), 0) 1) from seq_test;    --다음에 사용할 no값
+select NVL(MAX(no), 0) +1 from seq_test;    --다음에 사용할 no값
 
 INSERT INTO seq_test VALUES(  ( select MAX(no)+1 from seq_test ), '이름1');
 
